@@ -14,7 +14,7 @@ const Pagination = ({ pagina, setPagina, maximo }) => {
   };
 
   return (
-    <div className="flex justify-center items-center mt-6 fixed left-0 w-full p-2">
+    <div className="flex justify-center intems-center">
       <button
         disabled={pagina === 1 || pagina < 1}
         onClick={previousPage}

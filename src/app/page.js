@@ -33,7 +33,7 @@ export default function Page() {
   return (
     <div>
       <AddUserForm/>
-      <div className="grid grid-cols-3 gap-3 flex justify-center items-center mb-10">
+      <div className="grid grid-cols-3 gap-3 flex justify-center items-center ">
         {users
           ?.slice(
             (pagina - 1) * maximo,
@@ -48,8 +48,8 @@ export default function Page() {
               <p>Email: {e.email}</p>
             </div>
           ))}
-      </div>
       <Pagination pagina={pagina} setPagina={setPagina} maximo={maxPorPagina} />
+      </div>
     </div>
   );
 }
